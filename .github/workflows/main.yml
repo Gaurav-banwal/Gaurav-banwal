@@ -2,36 +2,39 @@ name: Generate Pacman Game
 
 on:
   schedule:
-    # Runs automatically once every day (e.g., at midnight UTC)
-    - cron: "0 0 * * *" 
-  workflow_dispatch: 
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   generate:
     permissions:
-      contents: write # This grants the job permission to commit files
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
-      # 1. Checkout: Get the repository files so the action can place the SVG in the root.
+      # 1. Checkout: Get the repository files
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Generate: Run the Pac-Man tool to create the SVG file in the repository root.
+      # 2. Generate: Creates dist/pacman-contribution-graph.svg
       - name: Generate Pacman-Contribution-Graph.svg
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      # 3. Commit: Use an action to commit the newly created SVG file back to the main branch.
-      # CORRECTED CODE (Using 'file_pattern' as suggested by the error)
+      # 2.5. **NEW STEP: COPY THE FILE TO THE ROOT**
+      # This moves the file from the 'dist' folder to the working directory root.
+      - name: Copy generated file to root
+        run: cp dist/pacman-contribution-graph.svg .
+
+      # 3. Commit: Now the file is in the root, and the commit action can find it easily.
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Feat: Automated Pacman contribution graph update'
-          # Use file_pattern to specify the file to commit
-          file_pattern: dist/pacman-contribution-graph.svg
+          # We revert the file_pattern to the simple name because we copied it to the root
+          file_pattern: pacman-contribution-graph.svg
