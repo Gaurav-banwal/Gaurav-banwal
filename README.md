@@ -52,8 +52,10 @@
 ## My Contribution Graph
 
 
+## My Contribution Graph
+
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/pacman-contribution-graph.svg" 
-         data-src-dark="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/pacman-contribution-graph-dark.svg" 
+    <img src="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/dist/pacman-contribution-graph.svg" 
+         data-src-dark="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/dist/pacman-contribution-graph-dark.svg" 
          alt="Pac-Man Contribution Graph" />
 </p>
