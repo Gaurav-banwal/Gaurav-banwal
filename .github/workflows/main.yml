@@ -28,9 +28,10 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
 
       # 3. Commit: Use an action to commit the newly created SVG file back to the main branch.
+      # CORRECTED CODE (Using 'file_pattern' as suggested by the error)
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Feat: Automated Pacman contribution graph update'
-          # This specifies the exact file to commit.
-          files: pacman-contribution-graph.svg
+          # Use file_pattern to specify the file to commit
+          file_pattern: pacman-contribution-graph.svg
