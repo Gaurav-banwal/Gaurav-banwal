@@ -16,9 +16,9 @@
         <a href="https://www.leetcode.com/gaurav_banwal" target="_blank">
         <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="gaurav_banwal on LeetCode" height="30" width="40" />
     </a>
-    <a href="www.linkedin.com/in/gaurav-banwal-016393329" target="_blank">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="Gaurav Banwal on LinkedIn" height="30" width="40" />
-    </a>
+        <a href="https://www.linkedin.com/in/gaurav-banwal-016393329" target="_blank">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="Gaurav Banwal on LinkedIn" height="30" width="40" />
+    </a>
 </p>
 
 ---
