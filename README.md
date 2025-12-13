@@ -19,8 +19,9 @@
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=gaurav-banwal&show_icons=true&locale=en&layout=compact" alt="gaurav-banwal" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gaurav-banwal&show_icons=true&locale=en" alt="gaurav-banwal" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav-banwal&" alt="gaurav-banwal" /></p>
+<img src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/snake.svg" alt="Snake animation" />
+<p>
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav-banwal&" alt="gaurav-banwal" /></p>
 
 <!--
 **Gaurav-banwal/Gaurav-banwal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
