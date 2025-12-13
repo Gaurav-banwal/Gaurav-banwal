@@ -20,19 +20,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Generate: Creates dist/pacman-contribution-graph.svg
+      # 2. Generate: Creates all files inside the temporary 'dist' folder
       - name: Generate Pacman-Contribution-Graph.svg
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      # 3. Commit: Use the correct input parameter and the correct path/filename.
-      # This step will commit the file from 'dist' to the repository root.
+      # 3. **CRITICAL FIX: MOVE FILES TO THE 'data' FOLDER**
+      # This moves the files from the temporary 'dist' folder into the permanent 'data' folder
+      - name: Move generated files to data folder
+        run: |
+          mkdir -p data 
+          cp dist/*.svg data/
+
+      # 4. Commit: Commit ALL files in the data folder to the main branch.
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Feat: Automated Pacman contribution graph update'
-          # CRITICAL FIX: Changed 'files' to 'file_pattern' AND added the 'dist/' path.
-          # The asterisk (*) ensures both 'pacman-contribution-graph.svg' and 
-          # 'pacman-contribution-graph-dark.svg' are committed.
-          file_pattern: dist/*.svg
+          # We use a pattern to commit all SVGs now located in the 'data' folder.
+          file_pattern: 'data/*.svg'
