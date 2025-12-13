@@ -1,36 +1,36 @@
 name: Generate Pacman Game
 
 on:
-  schedule: # Run automatically every 24 hours
-    - cron: "0 0 * * *" # Changed to 0 0 for daily midnight run, but "0 */24 * * *" is also fine
-  workflow_dispatch: # Allows manual triggering
+  schedule:
+    # Runs automatically once every day (e.g., at midnight UTC)
+    - cron: "0 0 * * *" 
+  workflow_dispatch: 
   push:
     branches:
-      - main # Runs on every push to the main branch
+      - main 
 
 jobs:
   generate:
     permissions:
-      # This is crucial for committing the generated file back to the repo
-      contents: write
+      contents: write # This grants the job permission to commit files
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
-      # 1. CHECKOUT THE REPOSITORY
+      # 1. Checkout: Get the repository files so the action can place the SVG in the root.
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. GENERATE PACMAN-CONTRIBUTION-GRAPH.SVG
+      # 2. Generate: Run the Pac-Man tool to create the SVG file in the repository root.
       - name: Generate Pacman-Contribution-Graph.svg
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      # 3. COMMIT AND PUSH THE NEW FILE TO THE MAIN BRANCH
+      # 3. Commit: Use an action to commit the newly created SVG file back to the main branch.
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Feat: Automated Pacman contribution graph update'
-          # The file created by the action is now in the root folder, ready to be committed
+          # This specifies the exact file to commit.
           files: pacman-contribution-graph.svg
