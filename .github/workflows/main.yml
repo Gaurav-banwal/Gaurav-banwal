@@ -26,15 +26,13 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      # 2.5. **NEW STEP: COPY THE FILE TO THE ROOT**
-      # This moves the file from the 'dist' folder to the working directory root.
-      - name: Copy generated file to root
-        run: cp dist/pacman-contribution-graph.svg .
-
-      # 3. Commit: Now the file is in the root, and the commit action can find it easily.
+      # 3. Commit: Use the correct input parameter and the correct path/filename.
+      # This step will commit the file from 'dist' to the repository root.
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Feat: Automated Pacman contribution graph update'
-          # We revert the file_pattern to the simple name because we copied it to the root
-          file_pattern: pacman-contribution-graph.svg
+          # CRITICAL FIX: Changed 'files' to 'file_pattern' AND added the 'dist/' path.
+          # The asterisk (*) ensures both 'pacman-contribution-graph.svg' and 
+          # 'pacman-contribution-graph-dark.svg' are committed.
+          file_pattern: dist/*.svg
