@@ -34,4 +34,4 @@ jobs:
         with:
           commit_message: 'Feat: Automated Pacman contribution graph update'
           # Use file_pattern to specify the file to commit
-          file_pattern: pacman-contribution-graph.svg
+          file_pattern: dist/pacman-contribution-graph.svg
