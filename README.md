@@ -53,11 +53,7 @@
 
 
 <p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" 
-              srcset="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/pacman-contribution-graph-dark.svg">
-    
-      <img src="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/pacman-contribution-graph.svg" 
-           alt="Pac-Man Contribution Graph">
-    </picture>
+    <img src="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/pacman-contribution-graph.svg" 
+         data-src-dark="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/pacman-contribution-graph-dark.svg" 
+         alt="Pac-Man Contribution Graph" />
 </p>
