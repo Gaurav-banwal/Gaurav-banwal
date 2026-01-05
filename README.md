@@ -51,10 +51,4 @@
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav-banwal&" alt="gaurav-banwal" />
 </p>
 
-## My Contribution Graph
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/Gaurav-banwal/Gaurav-banwal/main/dist/pacman-contribution-graph-dark.svg" 
-         alt="Pac-Man Contribution Graph (Dark Theme)" 
-         style="max-width: 100%; height: auto; display: block;"/>
-</p>
