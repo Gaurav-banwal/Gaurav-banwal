@@ -1,37 +1,37 @@
-name: Generate Pacman Game
+# name: Generate Pacman Game
 
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+# on:
+#   schedule:
+#     - cron: "0 0 * * *"
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+# jobs:
+#   generate:
+#     permissions:
+#       contents: write
+#     runs-on: ubuntu-latest
+#     timeout-minutes: 5
 
-    steps:
-      # 1. Checkout: Get the repository files
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       # 1. Checkout: Get the repository files
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
 
-      # 2. Generate: Creates all files inside the temporary 'dist' folder
-      - name: Generate Pacman-Contribution-Graph.svg
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ${{ github.repository_owner }}
+#       # 2. Generate: Creates all files inside the temporary 'dist' folder
+#       - name: Generate Pacman-Contribution-Graph.svg
+#         uses: abozanona/pacman-contribution-graph@main
+#         with:
+#           github_user_name: ${{ github.repository_owner }}
 
-      # 3. **CRITICAL FIX: COMMIT FILES FROM THE 'dist' FOLDER**
-      # We do NOT need the 'cp' or 'mkdir' steps if the files are already in 'dist/'
-      # This step will commit ALL files already found in the 'dist' folder.
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'Feat: Automated Pacman contribution graph update'
-          # We use a pattern to commit all SVGs located in the 'dist' folder.
-          file_pattern: 'dist/*.svg'
+#       # 3. **CRITICAL FIX: COMMIT FILES FROM THE 'dist' FOLDER**
+#       # We do NOT need the 'cp' or 'mkdir' steps if the files are already in 'dist/'
+#       # This step will commit ALL files already found in the 'dist' folder.
+#       - name: Commit and push changes
+#         uses: stefanzweifel/git-auto-commit-action@v5
+#         with:
+#           commit_message: 'Feat: Automated Pacman contribution graph update'
+#           # We use a pattern to commit all SVGs located in the 'dist' folder.
+#           file_pattern: 'dist/*.svg'
