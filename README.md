@@ -1,13 +1,14 @@
 ## Hi there 👋
 
 # Hi 👋, I'm Gaurav Banwal
-### A passionate Android developer from India
+### Aspiring Software Development Engineer (SDE) | Backend & Infrastructure Enthusiast
 
 ---
 
-* 🌱 I’m currently learning **Jetpack Compose**, **Rest API**, and **Firebase**.
-* 💬 Ask me about **Java** and **Kotlin**.
-* 📫 How to reach me: **gauravbanwal1234@gmail.com**
+* 🌱 I’m currently focused on **Backend Architecture** and **API Design**.
+* 🛠 Tech Stack: **Java/Kotlin**, **Spring Boot**, **PostgreSQL/MySQL**, **AWS**, and **Linux**.
+* 💬 Ask me about **Android Development** and **Mobile Application Architecture**.
+* 📫 Reach out: **gauravbanwal1234@gmail.com**
 
 ---
 ### 🌐 Connect with me:
@@ -40,34 +41,35 @@
 ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
-<!-- <p align="left">
-    <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="Android" width="40" height="40"/> </a>
-    <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" width="40" height="40"/> </a>
-    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/> </a>
-    <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="40" height="40"/> </a>
-    <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="40" height="40"/> </a>
-    <a href="https://jwt.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jwtio/jwtio-icon.svg" alt="JWT" width="40" height="40"/> </a>
-    <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="40" height="40"/> </a>
-    <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="Kotlin" width="40" height="40"/> </a>
-    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40"/> </a>
-    <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="40" height="40"/> </a>
-    <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" width="40" height="40"/> </a>
-    <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring Boot" width="40" height="40"/> </a>
-    <a href="https://vercel.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg" alt="Vercel" width="40" height="40"/> </a>
-</p> -->
+
 
 ---
 
+### 🚀 Featured Projects
+
+- **[Smart Cook](https://github.com/gaurav-banwal/smart-cook)** 🍳
+  - AI-integrated recipe assistant using **Gemini SDK**, **Room Database**, and **Spoonacular API**. 
+  - Focused on offline-first architecture and efficient data management.
+
+---
+
+
 ### 📈 GitHub Stats
 
-<p align="center">
-    <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=gaurav-banwal&show_icons=true&locale=en&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&text_color=00FF41&title_color=00FF41" alt="gaurav-banwal" />
-    <img align="center" src="https://github-readme-stats.vercel.app/api?username=gaurav-banwal&show_icons=true&locale=en&theme=radical&hide_border=true&bg_color=0D1117&text_color=00FF41&title_color=00FF41" alt="gaurav-banwal" />
-</p>
-<br clear="both">
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=gaurav-banwal&show_icons=true&theme=radical&hide_border=false&bg_color=F0FFF0&text_color=006400&title_color=006400" alt="GitHub Stats" />
+    </td>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gaurav-banwal&show_icons=true&layout=compact&theme=radical&hide_border=false&bg_color=F0FFF0&text_color=006400&title_color=006400" alt="Most Used Languages" />
+    </td>
+  </tr>
+</table>
 
 <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav-banwal&theme=radical&hide_border=true&background=0D1117&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakNum=00FF41&sideNums=00FF41&sideLabels=00FF41&dates=00FF41" alt="gaurav-banwal" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav-banwal&theme=radical&hide_border=false&background=F0FFF0&stroke=006400&ring=006400&fire=006400&currStreakNum=006400&sideNums=006400&sideLabels=006400&dates=006400" alt="Streak Stats" />
 </p>
+
 
 
