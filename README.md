@@ -56,19 +56,13 @@
 
 ### 📈 GitHub Stats
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=gaurav-banwal&show_icons=true&theme=radical&hide_border=false&bg_color=F0FFF0&text_color=006400&title_color=006400" alt="GitHub Stats" />
-    </td>
-    <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gaurav-banwal&show_icons=true&layout=compact&theme=radical&hide_border=false&bg_color=F0FFF0&text_color=006400&title_color=006400" alt="Most Used Languages" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=gaurav-banwal&show_icons=true&theme=radical&hide_border=false&bg_color=F0FFF0&text_color=006400&title_color=006400" alt="GitHub Stats" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=gaurav-banwal&show_icons=true&layout=compact&theme=radical&hide_border=false&bg_color=F0FFF0&text_color=006400&title_color=006400" alt="Most Used Languages" />
+</p>
 
 <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav-banwal&theme=radical&hide_border=false&background=F0FFF0&stroke=006400&ring=006400&fire=006400&currStreakNum=006400&sideNums=006400&sideLabels=006400&dates=006400" alt="Streak Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav-banwal&theme=radical&hide_border=false&background=F0FFF0&stroke=006400&ring=006400&fire=006400&currStreakNum=006400&sideNums=006400&sideLabels=006400&dates=006400" alt="Streak Stats" />
 </p>
 
 
